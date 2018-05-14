@@ -11,13 +11,21 @@ namespace Day_7
         static void Main(string[] args)
         {
 
+
+
+            Darbs2();
+
             for (int i = 10; i > 0; i--)
             {
                 Console.WriteLine(i);
             }
             Console.ReadLine();
 
+            
+
             ReizTabula();
+            Darbs();
+            
             /*Console.WriteLine("Ievadiet skaitli : ");
             string ievade = Console.ReadLine();
             int skaitlis = Convert.ToInt16(ievade);
@@ -27,6 +35,7 @@ namespace Day_7
                 Console.WriteLine(i + "*" + skaitlis + "=" + i * skaitlis);
             }
             */
+            
             Console.ReadLine();
         }
         static void ReizTabula()
@@ -37,10 +46,40 @@ namespace Day_7
 
             for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine(i + "*" + skaitlis + "=" + i * skaitlis);
+                Console.WriteLine(i + "*" + skaitlis + "=" + i * skaitlis +"\n");
             }
         }
+        static void Darbs()
+        {
+            string n = "";
+            for (int i = 1; i < 4; i++) 
+            {
+                n = n + "*";
+                Console.WriteLine(n);
+                
+            }
 
+            Console.ReadLine();
+
+        }
+        static void Darbs2()
+        {
+            Console.WriteLine("Ievadiet skaitli : ");
+            int Ver = 0;            
+            string ievade = Console.ReadLine();
+            int skaitlis = Convert.ToInt16(ievade);
+
+            
+            for (int i = 1; i <= skaitlis; i++) 
+            {
+
+                Ver = Ver + i;
+                Console.WriteLine(Ver);
+                
+            }
+            Console.ReadLine();
+        }
+           
 
 
     }
