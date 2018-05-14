@@ -72,9 +72,9 @@ namespace Day_7
             
             for (int i = 1; i <= skaitlis; i++) 
             {
-
+                int OldVer = Ver;
                 Ver = Ver + i;
-                Console.WriteLine(Ver);
+                Console.WriteLine(OldVer + "+" + i + "=" + Ver);
                 
             }
             Console.ReadLine();
